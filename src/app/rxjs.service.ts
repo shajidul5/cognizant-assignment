@@ -33,4 +33,8 @@ export class RxjsService {
       })
     })
   }
+
+  getOne(id){
+    return this.http.get('https://jsonplaceholder.typicode.com/users/'+id);
+  }
 }

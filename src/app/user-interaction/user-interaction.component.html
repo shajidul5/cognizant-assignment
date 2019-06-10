@@ -1,0 +1,18 @@
+<ng-multiselect-dropdown
+  [placeholder]="'Select a User'"
+  [data]="dropdownList"
+  [settings]="dropdownSettings"
+  (onSelect)="onItemSelect($event)"
+  (onSelectAll)="onSelectAll($event)"
+  (onDeSelect)="onItemDeSelect($event)"
+  (onDeSelectAll)="onDeSelectAll()"
+>
+</ng-multiselect-dropdown>
+
+<ag-grid-angular 
+    style="width: 602px; height: 118px;" 
+    class="ag-theme-balham"
+    [rowData]="rowData" 
+    [columnDefs]="columnDefs"
+    >
+</ag-grid-angular>
